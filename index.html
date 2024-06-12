@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200">
+	<title>GetPic</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="getpic">
+		<div class="getpic__container">
+			<aside class="aside">
+				<a href="#" class="aside__logo">
+					Get
+					<b>Pic</b>
+				</a>
+				<ul class="aside__list">
+					<li><a href="#">Все картинки</a></li>
+					<li class="active"><a href="#">Мои картинки</a></li>
+					<li><a href="#">Добавить</a></li>
+				</ul>
+				<div class="aside__bottom">
+					<div class="aside__stats">
+						<div class="aside__row">
+							<p>
+								 Доход за все время
+							</p>
+							<b>
+								60 756 
+							</b>
+						</div>
+						<div class="aside__row">
+							<p>
+								 Доход в феврале
+							</p>
+							<b>
+								4 043 
+							</b>
+						</div>
+						<div class="aside__row">
+							<p>
+								Всего просмотров
+							</p>
+							<span>
+								632 043
+							</span>
+						</div>
+					</div>
+					<div class="aside__user">
+						<p>
+							Художник-1       
+						</p>
+						<button>
+							...
+						</button>
+					</div>
+				</div>
+			</aside>
+			<main class="main">
+				<div class="main__header">
+					<div class="main__file">
+						<div class="main__filetop">
+							<span>
+								+
+							</span>
+							<p>
+								Изображение
+							</p>
+						</div>
+						<div class="main__files">
+							<div class="main__filewrap">
+								<input multiple type="file" id="file" accept="image/*">
+								<label for="file">
+									Перетащите изображение
+								</label>
+							</div>	
+							<button class="main__files-button">Сохранить</button>						
+						</div>
+
+
+					</div>
+					<button class="main__close hidden">
+						<img src="img/close.svg" alt="">
+					</button>
+					<div class="main__search">
+						<button>
+							<img src="img/search.svg" alt="">
+						</button>
+						<input type="text" placeholder="Поиск">
+					</div>
+				</div>
+				<article class="content">
+					<div class="content__gallery">
+						<div class="content__row">
+							<div class="content__gallery-title">
+								Сегодня
+							</div>
+							<div class="content__cards">
+								<div class="content__card withoutdescr">
+									<img src="img/cards/1.jpg" alt="">
+									<a href="#" class="content__adddescr">Добавить описание</a>
+								</div>
+								<div class="content__card withoutdescr">
+									<img src="img/cards/2.jpg" alt="">
+									<a href="#" class="content__adddescr">Добавить описание</a>
+								</div>
+								<div class="content__card withoutdescr">
+									<img src="img/cards/3.jpg" alt="">
+									<a href="#" class="content__adddescr">Добавить описание</a>
+								</div>
+								<a href="#" class="content__card">
+									<img src="img/cards/4.jpg" alt="">
+								</a>
+								<a href="#" class="content__card">
+									<img src="img/cards/5.jpg" alt="">
+								</a>
+								<a href="#" class="content__card">
+									<img src="img/cards/6.jpg" alt="">
+								</a>
+								<a href="#" class="content__card">
+									<img src="img/cards/7.jpg" alt="">
+								</a>
+								<a href="#" class="content__card">
+									<img src="img/cards/8.jpg" alt="">
+								</a>
+							</div>								
+						</div>
+						<div class="content__row">
+							<div class="content__gallery-title">
+								Вчера
+							</div>
+							<div class="content__cards">
+								<div class="content__card">
+									<img src="img/cards/9.jpg" alt="">
+									<div class="content__top">
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<div class="notactive">Ar</div>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/10.jpg" alt="">
+									<div class="content__top">
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<div class="notactive">Es</div>
+										<div class="notactive">Ar</div>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/11.jpg" alt="">
+									<div class="content__top">
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<div class="notactive">Es</div>
+										<div class="notactive">Ar</div>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/12.jpg" alt="">
+									<div class="content__top">
+										<div class="content__device">
+											<img src="img/mobile.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<div class="notactive">Es</div>
+										<div class="notactive">Ar</div>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/13.jpg" alt="">
+									<div class="content__top">
+										<div class="content__device">
+											<img src="img/mobile.svg" alt="">
+										</div>
+									</div>										
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+							</div>								
+						</div>
+						<div class="content__row">
+							<div class="content__gallery-title">
+								Вторник 05.02.2024
+							</div>
+							<div class="content__cards">
+								<div class="content__card">
+									<img src="img/cards/14.jpg" alt="">
+									<div class="content__top">
+										<div class="content__views">
+											26
+										</div>
+										<div class="content__device">
+											<img src="img/mobile.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/15.jpg" alt="">
+									<div class="content__top">
+										<div class="content__views">
+											31
+										</div>
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/16.jpg" alt="">
+									<div class="content__top">
+										<div class="content__views">
+											105
+										</div>
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/17.jpg" alt="">
+									<div class="content__top">
+										<div class="content__views">
+											77
+										</div>
+										<div class="content__device">
+											<img src="img/mobile.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/18.jpg" alt="">
+									<div class="content__top">
+										<div class="content__views">
+											6987
+										</div>
+										<div class="content__device">
+											<img src="img/dekstop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/19.jpg" alt="">
+									<div class="content__top">
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/20.jpg" alt="">
+									<div class="content__top">
+										<div class="content__views">
+											8
+										</div>
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+								<div class="content__card">
+									<img src="img/cards/21.jpg" alt="">
+									<div class="content__top">
+										<div class="content__views">
+											98
+										</div>
+										<div class="content__device">
+											<img src="img/desktop.svg" alt="">
+										</div>
+									</div>
+									<div class="content__links">
+										<a href="#">Ru</a>
+										<a href="#">En</a>
+										<a href="#">Es</a>
+										<a href="#">Ar</a>
+									</div>
+								</div>
+							</div>								
+						</div>
+						<div class="pagination">
+							<span class="active">1</span>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">...</a>
+							<a href="#">10</a>
+						</div>
+					</div>
+					<div class="content__aside">
+						<div class="content__block">
+							<div class="content__block-top">
+								<p>
+									Фильтры
+								</p>
+								<div class="content__block-arrow">
+									<img src="img/arrow.svg" alt="">
+								</div>
+							</div>
+							<div class="content__block-body">
+								<div class="content__block-list">
+									<a class="active" href="#">Последние</a>
+									<a href="#">Просмотры</a>
+									<a href="#">Доход</a>
+								</div>
+							</div>
+						</div>
+						<div class="content__block">
+							<div class="content__block-top">
+								<p>
+									Теги
+								</p>
+								<div data-topopup="#addTag" class="content__block-add">
+									<b>
+										+
+									</b>
+									<p>добавить</p>
+								</div>
+								<div class="content__block-arrow">
+									<img src="img/arrow.svg" alt="">
+								</div>
+							</div>
+							<div class="content__block-body">
+								<div class="content__block-links">
+									<a href="#">Абстракция</a>
+									<a href="#">Акробатика</a>
+									<a href="#">Актеры</a>
+									<a href="#">Ампир</a>
+									<a href="#">Ангелы</a>
+									<a href="#">Архитектура</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</main>
+		</div>
+	</div>
+	<div class="popup" id="selectPopup">
+		<p class="popup__close"></p>
+		<div class="popup__content">
+			<div class="popup__close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup__title">
+				Добавить тег из списка
+			</div>
+			<form action="#">
+				<select placeholder="Теги из списка" multiple>
+					<option value="Тег №1">Тег №1</option>
+					<option value="Тег №2">Тег №2</option>
+					<option value="Тег №3">Тег №3</option>
+					<option value="Тег №4">Тег №4</option>
+				</select>
+				<button>
+					Добавить
+				</button>				
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="addTag">
+		<p class="popup__close"></p>
+		<div class="popup__content">
+			<div class="popup__close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup__title">
+				Добавить тег
+			</div>
+			<form action="#">
+				<input type="text" placeholder="Введите название тега">
+				<button>
+					Добавить
+				</button>				
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="deletePopup">
+		<p class="popup__close"></p>
+		<div class="popup__content">
+			<div class="popup__close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup__title">
+				Вы действительно хотите удалить карточку?
+			</div>
+			<form action="#">
+				<div class="popup__buttons">
+					<button>
+						Да
+					</button>	
+					<button>
+						Нет
+					</button>						
+				</div>							
+			</form>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

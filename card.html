@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200">
+	<title>GetPic</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="getpic">
+		<div class="getpic__container">
+			<aside class="aside">
+				<a href="#" class="aside__logo">
+					Get
+					<b>Pic</b>
+				</a>
+				<ul class="aside__list">
+					<li><a href="#">Все картинки</a></li>
+					<li class="active"><a href="#">Мои картинки</a></li>
+					<li><a href="#">Добавить</a></li>
+				</ul>
+				<div class="aside__bottom">
+					<div class="aside__stats">
+						<div class="aside__row">
+							<p>
+								 Доход за все время
+							</p>
+							<b>
+								60 756 
+							</b>
+						</div>
+						<div class="aside__row">
+							<p>
+								 Доход в феврале
+							</p>
+							<b>
+								4 043 
+							</b>
+						</div>
+						<div class="aside__row">
+							<p>
+								Всего просмотров
+							</p>
+							<span>
+								632 043
+							</span>
+						</div>
+					</div>
+					<div class="aside__user">
+						<p>
+							Художник-1       
+						</p>
+						<button>
+							...
+						</button>
+					</div>
+				</div>
+			</aside>
+			<main class="main">
+				<div class="main__header">
+					<div class="main__file">
+						<div class="main__filetop">
+							<span>
+								+
+							</span>
+							<p>
+								Изображение
+							</p>
+						</div>
+						<div class="main__files">
+							<div class="main__filewrap">
+								<input multiple type="file" id="file" accept="image/*">
+								<label for="file">
+									Перетащите изображение
+								</label>
+							</div>
+							<button class="main__files-button">Сохранить</button>								
+						</div>
+					</div>
+					<button class="main__close hidden">
+						<img src="img/close.svg" alt="">
+					</button>
+					<div class="main__search hidden">
+						<button>
+							<img src="img/search.svg" alt="">
+						</button>
+						<input type="text" placeholder="Поиск">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__body">
+						<div class="card__image">
+							<img src="img/cards/22.jpg" alt="">
+						</div>
+					</div>
+					<div class="card__aside">
+						<div class="card__wrapper">
+							<div class="card__content">
+								<div class="card__links">
+									<a href="#">Ru</a>
+									<a class="notcompletely" href="#">En</a>
+									<a class="notcompletely" href="#">Es</a>
+									<div class="notactive">Ar</div>
+								</div>
+								<div class="card__main">
+									<div class="card__buttons">
+										<button>ChatGPT</button>
+										<button class="yellow">Yndex GPT</button>
+										<button class="green">Сохранить</button>
+									</div>
+									<div class="card__textarea">
+										<input type="text" value="Дарт Вейдер" placeholder="Название">
+										<button>
+											<img src="img/regeneration.svg" alt="">
+										</button>
+									</div>
+									<div class="card__textarea card__textarea-longer">
+										<textarea placeholder="Описание">Дарт Вейдер (Звездные войны) держит большой букет цветов мимозы, акцент на букете, реалистичная профессиональная фотография, снятая на полнокадровую камеру, 35 мм, высокая детализация, большое внимание к металлическим отражающим поверхностям, драматический утренний свет, стиль киноплаката.</textarea>
+										<button>
+											<img src="img/regeneration.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="card__tags">
+									<div class="card__tags-top">
+										<p>
+											Теги
+										</p>
+										<div data-topopup="#addTag" class="card__tags-add">
+											<span>
+												+
+											</span>
+											<p>
+												добавить новый
+											</p>
+										</div>
+									</div>
+									<select name="tags[]" multiple>
+										<option value="Дарт Вейдер">Дарт Вейдер</option>
+										<option value="Актеры">Актеры</option>
+										<option value="Киногерои">Киногерои</option>
+										<option value="8 марта">8 марта</option>
+										<option value="Поздравление">Поздравление</option>
+									</select>
+
+								</div>
+							</div>
+							<div class="card__bottom">
+								<div class="card__bottom-radios">
+									<div class="card__bottom-radio">
+										<input checked type="radio" name="deviceType" id="deviceType1">
+										<label for="deviceType1">
+											<img src="img/desktop.svg" alt="">
+										</label>
+									</div>
+									<div class="card__bottom-radio">
+										<input type="radio" name="deviceType" id="deviceType2">
+										<label for="deviceType2">
+											<img src="img/mobile.svg" alt="">
+										</label>
+									</div>
+									<div class="card__bottom-radio">
+										<input type="radio" name="deviceType" id="deviceType3">
+										<label for="deviceType3">
+											<img src="img/tablet.svg" alt="">
+										</label>
+									</div>									
+								</div>
+								<div class="card__bottom-actions">
+									<button class="button">Сохранить</button>
+									<div data-topopup="#deletePopup" class="card__bottom-delete">
+										<img src="img/delete.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card__gallery">
+							<div class="card__gallery-block">
+								<a href="#" class="card__gallery-image withoutdescr"><img src="img/cards/1.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image withoutdescr"><img src="img/cards/2.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/3.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/4.jpg" alt=""></a>
+							</div>
+							<div class="card__gallery-block">
+								<a href="#" class="card__gallery-image"><img src="img/cards/5.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/6.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/7.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/8.jpg" alt=""></a>
+							</div>
+							<div class="card__gallery-block">
+								<a href="#" class="card__gallery-image"><img src="img/cards/9.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/10.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/11.jpg" alt=""></a>
+								<a href="#" class="card__gallery-image"><img src="img/cards/12.jpg" alt=""></a>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<div class="popup" id="addTag">
+		<p class="popup__close"></p>
+		<div class="popup__content">
+			<div class="popup__close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup__title">
+				Добавить тег
+			</div>
+			<form action="#">
+				<input type="text" placeholder="Введите название тега">
+				<button>
+					Добавить
+				</button>				
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="deletePopup">
+		<p class="popup__close"></p>
+		<div class="popup__content">
+			<div class="popup__close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup__title">
+				Вы действительно хотите удалить карточку?
+			</div>
+			<form action="#">
+				<div class="popup__buttons">
+					<button>
+						Да
+					</button>	
+					<button>
+						Нет
+					</button>						
+				</div>							
+			</form>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
